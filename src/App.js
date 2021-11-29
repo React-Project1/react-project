@@ -28,10 +28,16 @@ console.log(sportFact)
     <div className="App">
       <Header/>
       <Navbar/>
-      <div className='api'>
-        <p>{sportFact.HomeTeam}</p>
-        <button onClick={() => setVal(val + 1)} >See Upcoming Games</button>
-      </div>
+      <table className='api'>
+        <th>Game of the Day</th>
+        <tr>Home: {sportFact.HomeTeam}</tr>
+        <tr>Away: {sportFact.AwayTeam}</tr>
+        <tr>Date: {sportFact.DateTime}</tr>
+        <tr>Channel: {sportFact.Channel}</tr>
+        <tr>Point Spread: {sportFact.PointSpread}</tr>
+        <tr>Over/Under: {sportFact.OverUnder}</tr>
+        
+      </table>
       <Switch>
         <Route exact path='/' component={(props) => <Home {...props} />} />
         <Route exact path='/post' component={(props) => <NewPost {...props} />} />
