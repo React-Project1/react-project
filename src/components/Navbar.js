@@ -1,9 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({post}) => {
     const [search, setSearch]= React.useState('')
     const [searchResults, setSearcResults]= React.useState([])
+    
+    
 
     return (
         <nav className="Nav">

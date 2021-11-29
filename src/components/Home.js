@@ -3,17 +3,13 @@ import { posts } from './posts'
 import Feed from './Feed'
 
 const Home = () =>{
-    const [postsText, setPostsText]= React.useState(posts)
+    // const [postsText, setPostsText]= React.useState(posts)
     
     return (
         <main className='Home'>
-            {postsText.length ? (
-                <Feed posts={postsText} />
-            ) : (
-                <p style={{marginTop: '2rem'}}>
-                    No posts to display
-                </p>
-            )}
+                
+                <Feed />
+           
         </main>
     )
 }
