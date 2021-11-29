@@ -1,0 +1,18 @@
+import React from 'react'
+import {Link} from 'react-router-dom'
+
+const Post = (post) =>{
+    console.log(post)
+    return (
+        <article className='post'>
+            <Link to={`/post/${post.id}`}>
+                <h2>{post.title}</h2>
+                <p className='postDate'>{post.datetime}</p>
+            </Link>
+            <p className='postBody'>{post.body}</p>
+        </article>
+    )
+}
+
+
+export default Post
