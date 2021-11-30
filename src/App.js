@@ -30,12 +30,11 @@ console.log(sportFact)
       <Navbar/>
       <table className='api'>
         <th>Game of the Day</th>
-        <tr>Home: {sportFact.HomeTeam}</tr>
-        <tr>Away: {sportFact.AwayTeam}</tr>
-        <tr>Date: {sportFact.DateTime}</tr>
-        <tr>Channel: {sportFact.Channel}</tr>
-        <tr>Point Spread: {sportFact.PointSpread}</tr>
-        <tr>Over/Under: {sportFact.OverUnder}</tr>
+        <td>Home: {sportFact.HomeTeam}</td>
+        <td>Away: {sportFact.AwayTeam}</td>
+        <td>Channel: {sportFact.Channel}</td>
+        <td>Point Spread: {sportFact.PointSpread}</td>
+        <td>Over/Under: {sportFact.OverUnder}</td>
         
       </table>
       <Switch>
@@ -49,6 +48,7 @@ console.log(sportFact)
     </div>
   );
 }
+        
         
         
       
