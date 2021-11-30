@@ -19,7 +19,7 @@ function App() {
   React.useEffect(() => {
     axios.get('https://api.sportsdata.io/v3/nba/scores/json/Games/2021?key=185b9b532fe94333991d47b60b7dbeeb').then((info) => {
     
-    setSportFact(info.data[0])
+    setSportFact(info.data[75])
     })
   }, [val])
   
